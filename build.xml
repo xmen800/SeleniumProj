@@ -9,7 +9,7 @@
 	<property name="test.output" location="target/test-classes" />
 	<property name="test.reports" location="target/test-reports" />
 	<taskdef resource="testngtasks"
-		classpath="/mnt/master/slave/workspace/test/lib/testng-5.14.1.jar" />
+		classpath="/mnt/master/slave/workspace/selenium_test/lib/testng-5.14.1.jar" />
 
 	<path id="compile.classpath">
 		<fileset dir="lib">

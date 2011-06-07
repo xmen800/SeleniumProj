@@ -1,0 +1,23 @@
+<html><head><title>testng.xml for Knorrium.info - Wordpress Demo</title></head><body><tt>&lt;!DOCTYPE&nbsp;suite&nbsp;SYSTEM&nbsp;"http://testng.org/testng-1.0.dtd"&gt;
+<br/>&lt;suite&nbsp;thread-count="5"&nbsp;configfailurepolicy="skip"&nbsp;verbose="10"&nbsp;name="Knorrium.info&nbsp;-&nbsp;Wordpress&nbsp;Demo"&nbsp;skipfailedinvocationcounts="false"&nbsp;annotations="JDK"&nbsp;data-provider-thread-count="10"&gt;
+<br/>&nbsp;&nbsp;&lt;parameter&nbsp;name="selenium.url"&nbsp;value="http://demo.opensourcecms.com/wordpress/"/&gt;
+<br/>&nbsp;&nbsp;&lt;parameter&nbsp;name="selenium.browser"&nbsp;value="*iexplore"/&gt;
+<br/>&nbsp;&nbsp;&lt;parameter&nbsp;name="selenium.port"&nbsp;value="4444"/&gt;
+<br/>&nbsp;&nbsp;&lt;parameter&nbsp;name="selenium.host"&nbsp;value="localhost"/&gt;
+<br/>&nbsp;&nbsp;&lt;test&nbsp;verbose="1"&nbsp;name="Write&nbsp;new&nbsp;post"&nbsp;junit="false"&nbsp;preserve-order="true"&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;classes&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;class&nbsp;name="script.BaseTest"&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;methods&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;include&nbsp;name="LaunchSite"/&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;include&nbsp;name="OpenAdminPage"/&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;include&nbsp;name="LoginAsAdmin"/&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;include&nbsp;name="NavigateNewPost"/&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;include&nbsp;name="WriteBlogPost"/&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;include&nbsp;name="PublishBlogPost"/&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;include&nbsp;name="VerifyBlogPost"/&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/methods&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/class&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/classes&gt;
+<br/>&nbsp;&nbsp;&lt;/test&gt;
+<br/>&lt;/suite&gt;
+<br/></tt></body></html>

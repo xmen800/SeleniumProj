@@ -1,0 +1,809 @@
+<html xmlns:math="http://exslt.org/math" xmlns:testng="http://testng.org">
+   <head>
+      <title>TestNG Results</title>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <meta http-equiv="pragma" content="no-cache"></meta>
+      <meta http-equiv="cache-control" content="max-age=0"></meta>
+      <meta http-equiv="cache-control" content="no-cache"></meta>
+      <meta http-equiv="cache-control" content="no-store"></meta>
+      <LINK rel="stylesheet" href="style.css"></LINK>
+      <script type="text/javascript" src="main.js"></script>
+   </head>
+   <body>
+      <table width="100%" style="font-size: 16px; margin-bottom: 10px;" cellspacing="1">
+         <tr>
+            <td width="100%">
+               Test case
+               
+               <b>Write new post</b>
+            </td>
+            <td style="background-color: #FFBBBB; padding: 3px 3px 3px 0;" align="center">
+               <div style="width: 50px;">1</div>
+            </td>
+            <td style="background-color: lightgreen; padding: 3px 3px 3px 0;" align="center">
+               <div style="width: 50px;">2</div>
+            </td>
+            <td style="background-color: #FFFFBB; padding: 3px 3px 3px 0;" align="center">
+               <div style="width: 50px;">0</div>
+            </td>
+            <td align="center" style="background-color: #eaf0f7; padding: 3px 3px 3px 0;">
+               <div style="width: 50px;">3</div>
+            </td>
+            <td align="center"
+                style="font-weight: bold; background-color: #eaf0f7; padding: 3px 3px 3px 0;">
+               <div style="width: 50px;">67%</div>
+            </td>
+            <td style="background-color: #eaf0f7; padding: 3px 3px 3px 0;" align="center"
+                nowrap="true">33s
+               
+            </td>
+         </tr>
+      </table>
+      <div style="width: 200px;">
+         <label for="groupMethodsCheckBox" style="font-weight: bold; margin: 0;">
+            <input id="groupMethodsCheckBox" type="checkbox" onclick="switchTestMethodsView(this)"
+                   checked=""></input>
+            Group by class
+            
+         </label>
+         <br></br>
+         <label for="methodsFilter_ALL" style="font-weight: bold; margin: 0;">
+            <input id="methodsFilter_ALL" type="checkbox"
+                   onclick="testMethodsFilterChanged(this, 'ALL')"
+                   checked=""></input>
+            All
+            
+         </label>
+      </div>
+      <label for="methodsFilter_FAIL" style="margin-left: 20px;">
+         <input id="methodsFilter_FAIL" type="checkbox"
+                onclick="testMethodsFilterChanged(this, 'FAIL')"
+                checked=""></input>
+         Failed
+         
+      </label>
+      <label for="methodsFilter_PASS">
+         <input id="methodsFilter_PASS" type="checkbox"
+                onclick="testMethodsFilterChanged(this, 'PASS')"
+                checked=""></input>
+         Passed
+         
+      </label>
+      <label for="methodsFilter_SKIP">
+         <input id="methodsFilter_SKIP" type="checkbox"
+                onclick="testMethodsFilterChanged(this, 'SKIP')"
+                checked=""></input>
+         Skipped
+         
+      </label>
+      <label for="methodsFilter_CONF">
+         <input id="methodsFilter_CONF" type="checkbox"
+                onclick="testMethodsFilterChanged(this, 'CONF')"
+                checked=""></input>
+         Config
+         
+      </label>
+      <br></br>
+      <div id="testMethodsByStatus" style="display: none;">
+         <table class="testMethodsTable" cellpadding="0" cellspacing="0">
+            <tr class="methodsTableHeader">
+               <td width="100%">Name</td>
+               <td nowrap="true">Started</td>
+               <td nowrap="true">Duration</td>
+               <td>Exception</td>
+            </tr>
+            <tr id="script.DataProviderExample_testDataProviderExample on instance null(script.DataProviderExample)_byStatus_failed_FAIL1_row"
+                class="testMethodStatusFAIL">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('script.DataProviderExample_testDataProviderExample on instance null(script.DataProviderExample)_byStatus_failed_FAIL1_details')">testDataProviderExample on instance null(script.DataProviderExample)(The Cows
+                     
+                     ,
+                     
+                     Leonel Ndi
+                     
+                     ,
+                     
+                     The last test
+                     
+                     ,
+                     
+                     Annita Bih)
+                  </a>
+               </td>
+               <td nowrap="true">21:01:48</td>
+               <td nowrap="true" align="right">5s
+                  
+               </td>
+               <td nowrap="true">
+                  <a onclick="toggleDetailsVisibility('script.DataProviderExample_testDataProviderExample on instance null(script.DataProviderExample)_byStatus_failed_FAIL1_exception')">com.thoughtworks.selenium.SeleniumException: 
+                     ERROR: Element xpath=/descendant::a[text()='The Cows'] not found
+                     
+                  </a>
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4"
+                   style="padding: 0; background-color: white; border-style: none; height: 0px;">
+                  <div id="script.DataProviderExample_testDataProviderExample on instance null(script.DataProviderExample)_byStatus_failed_FAIL1_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name:
+                           
+                        </b>testDataProviderExample on instance null(script.DataProviderExample)
+                     </div>
+                     <div>
+                        <b>Signature:
+                           
+                        </b>testDataProviderExample(java.lang.String, java.lang.String, java.lang.String, java.lang.String)
+                     </div>
+                     <div>
+                        <b>Parameters:
+                           
+                        </b>
+                        
+                        The Cows
+                        
+                        ,
+                        
+                        Leonel Ndi
+                        
+                        ,
+                        
+                        The last test
+                        
+                        ,
+                        
+                        Annita Bih
+                        
+                        
+                     </div>
+                     <div>
+                        <b>Start time:
+                           
+                        </b>21:01:48
+                     </div>
+                     <div>
+                        <b>End time:
+                           
+                        </b>21:01:53
+                     </div>
+                     <div>
+                        <b>Duration:
+                           
+                        </b>5s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4"
+                   style="padding: 0; background-color: white; border-style: none; height: 0px;">
+                  <div id="script.DataProviderExample_testDataProviderExample on instance null(script.DataProviderExample)_byStatus_failed_FAIL1_exception"
+                       class="testMethodDetails">
+                     <pre style="padding: 5px; margin: 0;">com.thoughtworks.selenium.SeleniumException: ERROR: Element xpath=/descendant::a[text()='The Cows'] not found
+                        	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+                        	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+                        	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:167)
+                        	at script.DataProviderExample.testDataProviderExample(DataProviderExample.java:69)
+                        	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                        	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+                        	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+                        	at java.lang.reflect.Method.invoke(Unknown Source)
+                        	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:641)
+                        	at org.testng.internal.Invoker.invokeMethod(Invoker.java:677)
+                        	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:850)
+                        	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1154)
+                        	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+                        	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+                        	at org.testng.TestRunner.runWorkers(TestRunner.java:1108)
+                        	at org.testng.TestRunner.privateRun(TestRunner.java:737)
+                        	at org.testng.TestRunner.run(TestRunner.java:596)
+                        	at org.testng.SuiteRunner.runTest(SuiteRunner.java:315)
+                        	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:310)
+                        	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:272)
+                        	at org.testng.SuiteRunner.run(SuiteRunner.java:221)
+                        	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+                        	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+                        	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1027)
+                        	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+                        	at org.testng.TestNG.run(TestNG.java:896)
+                        	at org.testng.TestNG.privateMain(TestNG.java:1193)
+                        	at org.testng.TestNG.main(TestNG.java:1153)
+                     </pre>
+                  </div>
+               </td>
+            </tr>
+            <tr id="script.DataProviderExample_setUp on instance null(script.DataProviderExample)_byStatus_passed_PASS1_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('script.DataProviderExample_setUp on instance null(script.DataProviderExample)_byStatus_passed_PASS1_details')">setUp on instance null(script.DataProviderExample)()</a>
+               </td>
+               <td nowrap="true">21:01:19</td>
+               <td nowrap="true" align="right">15s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4"
+                   style="padding: 0; background-color: white; border-style: none; height: 0px;">
+                  <div id="script.DataProviderExample_setUp on instance null(script.DataProviderExample)_byStatus_passed_PASS1_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name:
+                           
+                        </b>setUp on instance null(script.DataProviderExample)
+                     </div>
+                     <div>
+                        <b>Signature:
+                           
+                        </b>setUp()
+                     </div>
+                     <div>
+                        <b>Start time:
+                           
+                        </b>21:01:19
+                     </div>
+                     <div>
+                        <b>End time:
+                           
+                        </b>21:01:34
+                     </div>
+                     <div>
+                        <b>Duration:
+                           
+                        </b>15s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="script.DataProviderExample_testDataProviderExample on instance null(script.DataProviderExample)_byStatus_passed_PASS2_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('script.DataProviderExample_testDataProviderExample on instance null(script.DataProviderExample)_byStatus_passed_PASS2_details')">testDataProviderExample on instance null(script.DataProviderExample)(The Silence of the Lambs
+                     
+                     ,
+                     
+                     Jonathan Denem
+                     
+                     ,
+                     
+                     Dr. Hannibal Lecter. Brilliant. Cunning. Psychotic. In his mind lies the clue to a ruthless killer. - Clarice Starling, FBI.
+                     Brilliant. Vulnerable. Alone. She must trust him to stop the killer.
+                     
+                     ,
+                     
+                     Anthony Hopkins)
+                  </a>
+               </td>
+               <td nowrap="true">21:01:34</td>
+               <td nowrap="true" align="right">8s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4"
+                   style="padding: 0; background-color: white; border-style: none; height: 0px;">
+                  <div id="script.DataProviderExample_testDataProviderExample on instance null(script.DataProviderExample)_byStatus_passed_PASS2_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name:
+                           
+                        </b>testDataProviderExample on instance null(script.DataProviderExample)
+                     </div>
+                     <div>
+                        <b>Signature:
+                           
+                        </b>testDataProviderExample(java.lang.String, java.lang.String, java.lang.String, java.lang.String)
+                     </div>
+                     <div>
+                        <b>Parameters:
+                           
+                        </b>
+                        
+                        The Silence of the Lambs
+                        
+                        ,
+                        
+                        Jonathan Denem
+                        
+                        ,
+                        
+                        Dr. Hannibal Lecter. Brilliant. Cunning. Psychotic. In his mind lies the clue to a ruthless killer. - Clarice Starling, FBI.
+                        Brilliant. Vulnerable. Alone. She must trust him to stop the killer.
+                        
+                        ,
+                        
+                        Anthony Hopkins
+                        
+                        
+                     </div>
+                     <div>
+                        <b>Start time:
+                           
+                        </b>21:01:34
+                     </div>
+                     <div>
+                        <b>End time:
+                           
+                        </b>21:01:42
+                     </div>
+                     <div>
+                        <b>Duration:
+                           
+                        </b>8s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="script.DataProviderExample_testDataProviderExample on instance null(script.DataProviderExample)_byStatus_passed_PASS3_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('script.DataProviderExample_testDataProviderExample on instance null(script.DataProviderExample)_byStatus_passed_PASS3_details')">testDataProviderExample on instance null(script.DataProviderExample)(The Birds
+                     
+                     ,
+                     
+                     Alfred Hitchcock
+                     
+                     ,
+                     
+                     A wealthy San Francisco playgirl pursues a potential boyfriend to a small Northern California town that slowly takes a turn
+                     for the bizarre when birds of all kinds suddenly begin to attack people there in increasing numbers and with increasing viciousness
+                     
+                     ,
+                     
+                     Patrick Swayze)
+                  </a>
+               </td>
+               <td nowrap="true">21:01:42</td>
+               <td nowrap="true" align="right">6s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4"
+                   style="padding: 0; background-color: white; border-style: none; height: 0px;">
+                  <div id="script.DataProviderExample_testDataProviderExample on instance null(script.DataProviderExample)_byStatus_passed_PASS3_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name:
+                           
+                        </b>testDataProviderExample on instance null(script.DataProviderExample)
+                     </div>
+                     <div>
+                        <b>Signature:
+                           
+                        </b>testDataProviderExample(java.lang.String, java.lang.String, java.lang.String, java.lang.String)
+                     </div>
+                     <div>
+                        <b>Parameters:
+                           
+                        </b>
+                        
+                        The Birds
+                        
+                        ,
+                        
+                        Alfred Hitchcock
+                        
+                        ,
+                        
+                        A wealthy San Francisco playgirl pursues a potential boyfriend to a small Northern California town that slowly takes a turn
+                        for the bizarre when birds of all kinds suddenly begin to attack people there in increasing numbers and with increasing viciousness
+                        
+                        ,
+                        
+                        Patrick Swayze
+                        
+                        
+                     </div>
+                     <div>
+                        <b>Start time:
+                           
+                        </b>21:01:42
+                     </div>
+                     <div>
+                        <b>End time:
+                           
+                        </b>21:01:48
+                     </div>
+                     <div>
+                        <b>Duration:
+                           
+                        </b>6s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+         </table>
+      </div>
+      <div id="testMethodsByClass">
+         <table class="testMethodsTable" cellpadding="0" cellspacing="0">
+            <tr>
+               <td colspan="4">
+                  <h3 style="display: inline;">script.DataProviderExample</h3>
+               </td>
+            </tr>
+            <tr class="methodsTableHeader">
+               <td width="100%">Name</td>
+               <td nowrap="true">Started</td>
+               <td nowrap="true">Duration</td>
+               <td>Exception</td>
+            </tr>
+            <tr id="script.DataProviderExample_setUp on instance null(script.DataProviderExample)_byClass_PASS1_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('script.DataProviderExample_setUp on instance null(script.DataProviderExample)_byClass_PASS1_details')">setUp on instance null(script.DataProviderExample)()</a>
+               </td>
+               <td nowrap="true">21:01:19</td>
+               <td nowrap="true" align="right">15s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4"
+                   style="padding: 0; background-color: white; border-style: none; height: 0px;">
+                  <div id="script.DataProviderExample_setUp on instance null(script.DataProviderExample)_byClass_PASS1_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name:
+                           
+                        </b>setUp on instance null(script.DataProviderExample)
+                     </div>
+                     <div>
+                        <b>Signature:
+                           
+                        </b>setUp()
+                     </div>
+                     <div>
+                        <b>Start time:
+                           
+                        </b>21:01:19
+                     </div>
+                     <div>
+                        <b>End time:
+                           
+                        </b>21:01:34
+                     </div>
+                     <div>
+                        <b>Duration:
+                           
+                        </b>15s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="script.DataProviderExample_testDataProviderExample on instance null(script.DataProviderExample)_byClass_PASS2_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('script.DataProviderExample_testDataProviderExample on instance null(script.DataProviderExample)_byClass_PASS2_details')">testDataProviderExample on instance null(script.DataProviderExample)(The Silence of the Lambs
+                     
+                     ,
+                     
+                     Jonathan Denem
+                     
+                     ,
+                     
+                     Dr. Hannibal Lecter. Brilliant. Cunning. Psychotic. In his mind lies the clue to a ruthless killer. - Clarice Starling, FBI.
+                     Brilliant. Vulnerable. Alone. She must trust him to stop the killer.
+                     
+                     ,
+                     
+                     Anthony Hopkins)
+                  </a>
+               </td>
+               <td nowrap="true">21:01:34</td>
+               <td nowrap="true" align="right">8s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4"
+                   style="padding: 0; background-color: white; border-style: none; height: 0px;">
+                  <div id="script.DataProviderExample_testDataProviderExample on instance null(script.DataProviderExample)_byClass_PASS2_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name:
+                           
+                        </b>testDataProviderExample on instance null(script.DataProviderExample)
+                     </div>
+                     <div>
+                        <b>Signature:
+                           
+                        </b>testDataProviderExample(java.lang.String, java.lang.String, java.lang.String, java.lang.String)
+                     </div>
+                     <div>
+                        <b>Parameters:
+                           
+                        </b>
+                        
+                        The Silence of the Lambs
+                        
+                        ,
+                        
+                        Jonathan Denem
+                        
+                        ,
+                        
+                        Dr. Hannibal Lecter. Brilliant. Cunning. Psychotic. In his mind lies the clue to a ruthless killer. - Clarice Starling, FBI.
+                        Brilliant. Vulnerable. Alone. She must trust him to stop the killer.
+                        
+                        ,
+                        
+                        Anthony Hopkins
+                        
+                        
+                     </div>
+                     <div>
+                        <b>Start time:
+                           
+                        </b>21:01:34
+                     </div>
+                     <div>
+                        <b>End time:
+                           
+                        </b>21:01:42
+                     </div>
+                     <div>
+                        <b>Duration:
+                           
+                        </b>8s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="script.DataProviderExample_testDataProviderExample on instance null(script.DataProviderExample)_byClass_PASS3_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('script.DataProviderExample_testDataProviderExample on instance null(script.DataProviderExample)_byClass_PASS3_details')">testDataProviderExample on instance null(script.DataProviderExample)(The Birds
+                     
+                     ,
+                     
+                     Alfred Hitchcock
+                     
+                     ,
+                     
+                     A wealthy San Francisco playgirl pursues a potential boyfriend to a small Northern California town that slowly takes a turn
+                     for the bizarre when birds of all kinds suddenly begin to attack people there in increasing numbers and with increasing viciousness
+                     
+                     ,
+                     
+                     Patrick Swayze)
+                  </a>
+               </td>
+               <td nowrap="true">21:01:42</td>
+               <td nowrap="true" align="right">6s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4"
+                   style="padding: 0; background-color: white; border-style: none; height: 0px;">
+                  <div id="script.DataProviderExample_testDataProviderExample on instance null(script.DataProviderExample)_byClass_PASS3_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name:
+                           
+                        </b>testDataProviderExample on instance null(script.DataProviderExample)
+                     </div>
+                     <div>
+                        <b>Signature:
+                           
+                        </b>testDataProviderExample(java.lang.String, java.lang.String, java.lang.String, java.lang.String)
+                     </div>
+                     <div>
+                        <b>Parameters:
+                           
+                        </b>
+                        
+                        The Birds
+                        
+                        ,
+                        
+                        Alfred Hitchcock
+                        
+                        ,
+                        
+                        A wealthy San Francisco playgirl pursues a potential boyfriend to a small Northern California town that slowly takes a turn
+                        for the bizarre when birds of all kinds suddenly begin to attack people there in increasing numbers and with increasing viciousness
+                        
+                        ,
+                        
+                        Patrick Swayze
+                        
+                        
+                     </div>
+                     <div>
+                        <b>Start time:
+                           
+                        </b>21:01:42
+                     </div>
+                     <div>
+                        <b>End time:
+                           
+                        </b>21:01:48
+                     </div>
+                     <div>
+                        <b>Duration:
+                           
+                        </b>6s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="script.DataProviderExample_testDataProviderExample on instance null(script.DataProviderExample)_byClass_FAIL4_row"
+                class="testMethodStatusFAIL">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('script.DataProviderExample_testDataProviderExample on instance null(script.DataProviderExample)_byClass_FAIL4_details')">testDataProviderExample on instance null(script.DataProviderExample)(The Cows
+                     
+                     ,
+                     
+                     Leonel Ndi
+                     
+                     ,
+                     
+                     The last test
+                     
+                     ,
+                     
+                     Annita Bih)
+                  </a>
+               </td>
+               <td nowrap="true">21:01:48</td>
+               <td nowrap="true" align="right">5s
+                  
+               </td>
+               <td nowrap="true">
+                  <a onclick="toggleDetailsVisibility('script.DataProviderExample_testDataProviderExample on instance null(script.DataProviderExample)_byClass_FAIL4_exception')">com.thoughtworks.selenium.SeleniumException: 
+                     ERROR: Element xpath=/descendant::a[text()='The Cows'] not found
+                     
+                  </a>
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4"
+                   style="padding: 0; background-color: white; border-style: none; height: 0px;">
+                  <div id="script.DataProviderExample_testDataProviderExample on instance null(script.DataProviderExample)_byClass_FAIL4_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name:
+                           
+                        </b>testDataProviderExample on instance null(script.DataProviderExample)
+                     </div>
+                     <div>
+                        <b>Signature:
+                           
+                        </b>testDataProviderExample(java.lang.String, java.lang.String, java.lang.String, java.lang.String)
+                     </div>
+                     <div>
+                        <b>Parameters:
+                           
+                        </b>
+                        
+                        The Cows
+                        
+                        ,
+                        
+                        Leonel Ndi
+                        
+                        ,
+                        
+                        The last test
+                        
+                        ,
+                        
+                        Annita Bih
+                        
+                        
+                     </div>
+                     <div>
+                        <b>Start time:
+                           
+                        </b>21:01:48
+                     </div>
+                     <div>
+                        <b>End time:
+                           
+                        </b>21:01:53
+                     </div>
+                     <div>
+                        <b>Duration:
+                           
+                        </b>5s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4"
+                   style="padding: 0; background-color: white; border-style: none; height: 0px;">
+                  <div id="script.DataProviderExample_testDataProviderExample on instance null(script.DataProviderExample)_byClass_FAIL4_exception"
+                       class="testMethodDetails">
+                     <pre style="padding: 5px; margin: 0;">com.thoughtworks.selenium.SeleniumException: ERROR: Element xpath=/descendant::a[text()='The Cows'] not found
+                        	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+                        	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+                        	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:167)
+                        	at script.DataProviderExample.testDataProviderExample(DataProviderExample.java:69)
+                        	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                        	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+                        	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+                        	at java.lang.reflect.Method.invoke(Unknown Source)
+                        	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:641)
+                        	at org.testng.internal.Invoker.invokeMethod(Invoker.java:677)
+                        	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:850)
+                        	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1154)
+                        	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+                        	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+                        	at org.testng.TestRunner.runWorkers(TestRunner.java:1108)
+                        	at org.testng.TestRunner.privateRun(TestRunner.java:737)
+                        	at org.testng.TestRunner.run(TestRunner.java:596)
+                        	at org.testng.SuiteRunner.runTest(SuiteRunner.java:315)
+                        	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:310)
+                        	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:272)
+                        	at org.testng.SuiteRunner.run(SuiteRunner.java:221)
+                        	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+                        	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+                        	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1027)
+                        	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+                        	at org.testng.TestNG.run(TestNG.java:896)
+                        	at org.testng.TestNG.privateMain(TestNG.java:1193)
+                        	at org.testng.TestNG.main(TestNG.java:1153)
+                     </pre>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <br></br>
+      </div>
+      <div style="margin-top: 15px; color: gray; text-align: center; font-size: 9px;">
+         Generated with
+         
+         <a href="http://code.google.com/p/testng-xslt/" style="color: #8888aa;"
+            target="_blank">
+            TestNG XSLT
+            
+         </a>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" configfailurepolicy="skip" verbose="10" name="Failed suite [Knorrium.info - Wordpress Demo]" skipfailedinvocationcounts="false" annotations="JDK" data-provider-thread-count="10">
+  <parameter name="selenium.url" value="http://demo.opensourcecms.com/wordpress/"/>
+  <parameter name="selenium.browser" value="*firefox"/>
+  <parameter name="selenium.port" value="3737"/>
+  <parameter name="selenium.host" value="localhost"/>
+  <test verbose="1" name="Write new post(failed)" junit="false" annotations="JDK">
+    <parameter name="selenium.url" value="http://demo.opensourcecms.com/wordpress/"/>
+    <parameter name="selenium.browser" value="*firefox"/>
+    <parameter name="selenium.port" value="3737"/>
+    <parameter name="selenium.host" value="localhost"/>
+    <classes>
+      <class name="script.BaseTest">
+        <methods>
+          <include name="launchSite"/>
+          <include name="setupBeforeSuite"/>
+          <include name="setupAfterSuite"/>
+          <include name="openAdminPage"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

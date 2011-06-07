@@ -1,0 +1,97 @@
+<project name="Run Test" default="run_test" basedir=".">
+
+	<property name="test.dir" value="src" />
+	<property name="testLibDir" value="lib" />
+	<property name="build.src" location="src/script" />
+	<property name="build.output" location="build" />
+	<property name="dist" location="${basedir}/target/dist" />
+	<property name="test.src" location="src/test/unit/java" />
+	<property name="test.output" location="target/test-classes" />
+	<property name="test.reports" location="target/test-reports" />
+	<taskdef resource="testngtasks"
+		classpath="/mnt/master/slave/workspace/test/lib/testng-5.14.1.jar" />
+
+	<path id="compile.classpath">
+		<fileset dir="lib">
+			<include name="selenium-java-client-driver.jar" />
+			<include name="testng-5.14.1.jar" />
+			<include name="junit-4.8.1.jar" />
+			<include name="selenium-server.jar" />
+			<include name="jxl.jar" />
+			<include name="reportng-0.9.8.jar" />
+			<include name="velocity-dep-1.4.jar" />
+			<include name="saxon-8.7.jar" />
+		</fileset>
+	</path>
+
+
+	<path id="run.cp">
+		<pathelement path="build" />
+		<fileset dir="build/">
+			<include name="*.jar" />
+		</fileset>
+		<pathelement path="lib" />
+		<fileset dir="lib/">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+	<target name="compile" description="compile the source ">
+		<mkdir dir="${build.output}" />
+		<mkdir dir="${test.output}" />
+		<mkdir dir="${test.reports}" />
+
+		<javac srcdir="${build.src}" destdir="${build.output}" debug="true"
+			source="1.5" target="1.5">
+			<classpath refid="compile.classpath" />
+		</javac>
+		<copy todir="${build.output}" verbose="true">
+			<fileset dir="${build.src}" includes="**/*.html" />
+			<fileset dir="${build.src}" includes="**/*.yml" />
+		</copy>
+	</target>
+
+	<target name="run_testNG" depends="compile" description="Run TestNG">
+		<testng classpathref="run.cp" haltOnfailure="false"
+			outputDir="${basedir}/target/reports">
+			<xmlfileset dir="." includes="testng1.xml"/>
+		</testng>
+	</target>
+	
+	<target name="testng-xslt-report">
+		<mkdir dir="${basedir}/target/reports/output" />
+		<delete dir="${basedir}/target/reports/output" />
+		<xslt in="${basedir}/target/reports/testng-results.xml" style="${basedir}/styles/testng-results.xsl"
+			out="${basedir}/target/reports/output/index.html">
+			<param name="testNgXslt.outputDir" expression="${basedir}/target/reports/output" />
+			<param name="testNgXslt.sortTestCaseLinks" expression="true" />
+			<param name="testNgXslt.testDetailsFilter" expression="FAIL,SKIP,PASS,CONF,BY_CLASS" />
+			<param name="testNgXslt.showRuntimeTotals" expression="true" />
+			<!--<classpath refid="report.runtime.classpath"/> -->
+			<classpath refid="compile.classpath" />
+		</xslt>
+	</target>
+
+	<target name="stop_server" description="Stops your local Selenium Server">
+		<get taskname="selenium-shutdown"
+			src="http://localhost:4424/selenium-server/driver/?cmd=shutDown"
+			dest="result.txt" ignoreerrors="true" />
+	</target>
+
+	<target name="start-server">
+		<java jar="lib/selenium-server.jar" fork="true" spawn="true">
+			<arg line="-timeout 30" />
+		</java>
+		
+		<echo>Finished starting server</echo>
+	</target>
+
+	<target name="stop-server">
+		<get taskname="selenium-shutdown"
+			src="http://localhost:4444/selenium-server/driver/?cmd=shutDownSeleniumServer"
+			dest="result.txt" ignoreerrors="true" />
+		<echo taskname="selenium-shutdown" message="DGF Errors during shutdown are expected" />
+	</target>
+
+
+
+</project>

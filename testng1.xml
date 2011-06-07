@@ -1,0 +1,22 @@
+<suite name="Knorrium.info - Wordpress Demo" verbose="10">
+  <parameter name="selenium.host" value="localhost" />
+  <parameter name="selenium.port" value="4424" />
+  <parameter name="selenium.browser" value="*iexplore" />
+  <parameter name="selenium.url" value="http://demo.opensourcecms.com/wordpress/" />
+ 
+  <test name="Write new post" preserve-order="true">
+    <classes>
+      <class name="script.BaseTest">
+        <methods>
+          <include name="LaunchSite" />
+          <include name="OpenAdminPage" />
+          <include name="LoginAsAdmin" />
+          <include name="NavigateNewPost" />
+          <include name="WriteBlogPost" />
+          <include name="PublishBlogPost" />
+          <include name="VerifyBlogPost" />
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

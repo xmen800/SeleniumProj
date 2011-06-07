@@ -1,0 +1,8 @@
+<suite name="Google Test" verbose="10">
+  <test name="Write new post" preserve-order="true">
+    <classes>
+      <class name="script.DataProviderExample">
+      </class>
+    </classes>
+  </test>
+</suite>

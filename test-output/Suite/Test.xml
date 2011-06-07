@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="QUADUKLT4003" name="script.DataProviderExample" tests="6" failures="2" timestamp="10 Apr 2011 23:12:59 GMT" time="27.406" errors="0">
+  <testcase name="@BeforeClass setUp" time="0.0" classname="script.Google">
+    <failure type="java.net.BindException" message="Selenium is already running on port 4444. Or some other service is.">
+      <![CDATA[java.net.BindException: Selenium is already running on port 4444. Or some other service is.
+	at org.openqa.selenium.server.SeleniumServer.start(SeleniumServer.java:399)
+	at org.openqa.selenium.server.SeleniumServer.boot(SeleniumServer.java:234)
+	at script.Google.setUp(Google.java:20)
+... Removed 25 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testDataProviderExample on instance null(script.DataProviderExample)" time="6.094" classname="script.DataProviderExample">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="Timed out after 6000ms">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: Timed out after 6000ms
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.DefaultSelenium.waitForPageToLoad(DefaultSelenium.java:635)
+	at script.DataProviderExample.testDataProviderExample(DataProviderExample.java:53)
+... Removed 25 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testDataProviderExample on instance null(script.DataProviderExample)" time="5.953" classname="script.DataProviderExample"/>
+  <testcase name="testDataProviderExample on instance null(script.DataProviderExample)" time="3.282" classname="script.DataProviderExample">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="ERROR: Element xpath=/descendant::a[text()=&amp;apos;The Cows&amp;apos;] not found">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element xpath=/descendant::a[text()='The Cows'] not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:167)
+	at script.DataProviderExample.testDataProviderExample(DataProviderExample.java:66)
+... Removed 25 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testDataProviderExample on instance null(script.Google)" time="0.0" classname="script.Google">
+    <skipped/>
+  </testcase>
+  <testcase name="testDataProviderExample on instance null(script.Google)" time="0.0" classname="script.Google">
+    <skipped/>
+  </testcase>
+  <testcase name="testDataProviderExample on instance null(script.Google)" time="0.0" classname="script.Google">
+    <skipped/>
+  </testcase>
+</testsuite>

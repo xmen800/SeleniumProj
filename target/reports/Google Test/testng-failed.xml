@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" configfailurepolicy="skip" verbose="10" name="Failed suite [Google Test]" skipfailedinvocationcounts="false" annotations="JDK" data-provider-thread-count="10">
+  <test verbose="1" name="Write new post(failed)" junit="false" annotations="JDK">
+    <classes>
+      <class name="script.DataProviderExample">
+        <methods>
+          <include name="setUp"/>
+          <include name="testDataProviderExample" invocation-numbers="2"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

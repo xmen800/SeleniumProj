@@ -1,0 +1,65 @@
+<testng-results>
+  <reporter-output>
+  </reporter-output>
+  <suite name="Knorrium.info - Wordpress Demo" duration-ms="35875" started-at="2011-06-06T21:42:07Z" finished-at="2011-06-06T21:42:43Z">
+    <groups>
+    </groups>
+    <test name="Write new post" duration-ms="35875" started-at="2011-06-06T21:42:07Z" finished-at="2011-06-06T21:42:43Z">
+      <class name="script.BaseTest">
+        <test-method status="PASS" signature="setupBeforeSuite(org.testng.ITestContext)" name="setupBeforeSuite" is-config="true" duration-ms="4688" started-at="2011-06-06T21:42:02Z" finished-at="2011-06-06T21:42:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1a7508a]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="launchSite()" name="launchSite on instance null(script.BaseTest)" duration-ms="28391" started-at="2011-06-06T21:42:07Z" description="Launches the WordPress site" finished-at="2011-06-06T21:42:36Z">
+        </test-method>
+        <test-method status="FAIL" signature="openAdminPage()" name="openAdminPage on instance null(script.BaseTest)" duration-ms="7406" started-at="2011-06-06T21:42:36Z" description="Navigates to the admin page" depends-on-methods="script.BaseTest.launchSite" finished-at="2011-06-06T21:42:43Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected "Wordpress Demo › Log In" but saw "2070 Glenfield Squadron â€º Log In" instead]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected "Wordpress Demo › Log In" but saw "2070 Glenfield Squadron â€º Log In" instead
+	at com.thoughtworks.selenium.SeleneseTestBase.fail(SeleneseTestBase.java:360)
+	at com.thoughtworks.selenium.SeleneseTestBase.assertTrue(SeleneseTestBase.java:365)
+	at com.thoughtworks.selenium.SeleneseTestBase.assertEquals(SeleneseTestBase.java:193)
+	at com.thoughtworks.selenium.SeleneseTestCase.assertEquals(SeleneseTestCase.java:129)
+	at script.BaseTest.openAdminPage(BaseTest.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:641)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:677)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:850)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1154)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:737)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:315)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:272)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:221)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1027)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:896)
+	at org.testng.TestNG.privateMain(TestNG.java:1193)
+	at org.testng.TestNG.main(TestNG.java:1153)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="setupAfterSuite()" name="setupAfterSuite" is-config="true" duration-ms="282" started-at="2011-06-06T21:42:43Z" finished-at="2011-06-06T21:42:43Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

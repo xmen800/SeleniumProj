@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="QUADUKLT4003" name="script.BaseTest" tests="7" failures="2" timestamp="21 Apr 2011 13:17:28 GMT" time="18.735" errors="0">
+  <testcase name="launchSite on instance null(script.BaseTest)" time="2.829" classname="script.BaseTest">
+    <failure type="java.lang.AssertionError" message="Expected &amp;quot;Wordpress Demo | Just another WordPress site&amp;quot; but saw &amp;quot;Demo | Just another WordPress site&amp;quot; instead">
+      <![CDATA[java.lang.AssertionError: Expected "Wordpress Demo | Just another WordPress site" but saw "Demo | Just another WordPress site" instead
+	at com.thoughtworks.selenium.SeleneseTestBase.fail(SeleneseTestBase.java:360)
+	at com.thoughtworks.selenium.SeleneseTestBase.assertTrue(SeleneseTestBase.java:365)
+	at com.thoughtworks.selenium.SeleneseTestBase.assertEquals(SeleneseTestBase.java:193)
+	at com.thoughtworks.selenium.SeleneseTestCase.assertEquals(SeleneseTestCase.java:129)
+	at script.BaseTest.launchSite(BaseTest.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:641)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:677)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:850)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1154)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:737)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:315)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:272)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:221)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1027)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:896)
+	at org.testng.TestNG.privateMain(TestNG.java:1193)
+	at org.testng.TestNG.main(TestNG.java:1153)
+]]>
+    </failure>
+  </testcase>
+  <testcase name="openAdminPage on instance null(script.BaseTest)" time="1.5" classname="script.BaseTest">
+    <failure type="java.lang.AssertionError" message="Expected &amp;quot;Wordpress Demo › Log In&amp;quot; but saw &amp;quot;Demo › Log In&amp;quot; instead">
+      <![CDATA[java.lang.AssertionError: Expected "Wordpress Demo › Log In" but saw "Demo › Log In" instead
+	at com.thoughtworks.selenium.SeleneseTestBase.fail(SeleneseTestBase.java:360)
+	at com.thoughtworks.selenium.SeleneseTestBase.assertTrue(SeleneseTestBase.java:365)
+	at com.thoughtworks.selenium.SeleneseTestBase.assertEquals(SeleneseTestBase.java:193)
+	at com.thoughtworks.selenium.SeleneseTestCase.assertEquals(SeleneseTestCase.java:129)
+	at script.BaseTest.openAdminPage(BaseTest.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:641)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:677)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:850)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1154)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:137)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:121)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:737)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:315)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:272)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:221)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1027)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:896)
+	at org.testng.TestNG.privateMain(TestNG.java:1193)
+	at org.testng.TestNG.main(TestNG.java:1153)
+]]>
+    </failure>
+  </testcase>
+  <testcase name="loginAsAdmin on instance null(script.BaseTest)" time="3.375" classname="script.BaseTest"/>
+  <testcase name="navigateNewPost on instance null(script.BaseTest)" time="5.437" classname="script.BaseTest"/>
+  <testcase name="writeBlogPost on instance null(script.BaseTest)" time="0.141" classname="script.BaseTest"/>
+  <testcase name="publishBlogPost on instance null(script.BaseTest)" time="4.437" classname="script.BaseTest"/>
+  <testcase name="verifyBlogPost on instance null(script.BaseTest)" time="1.016" classname="script.BaseTest"/>
+</testsuite>
